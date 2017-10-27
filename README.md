@@ -9,7 +9,7 @@ This .ipynb file creates one big turtle file. It uses multiple functions we crea
 - ShortestPath_Application.ipynb
 This .ipynb uses Query's on the ontology we created with ontologyCreator.ipynb. This ontology is loaded in stardog so we can use a SARRQL query on it. The function named findShortestPaths had 2 values as input named 'startName' and 'targetName'. By using a query on the localhost it gets the data about the people the startName has worked with, after this the function again uses a query on the localhost to get the data about the people these persons has worked with. It keeps looping in that manner untill the targetName is found. This path is the shortest path between the startName and the TargetName and is returned as output. If these are for example 2 paths with a length of 4, then both paths are returned as output. The classes and codes at the last code block in this notebook are created so we have a user interface where the function ontologyCreator will be used in. 
 
-- NetworkGraphMovie.ipynb
+- OntologyVisualization.ipynb
 This function uses the ontology we created in the ontologyCreator.ipynb file to create a visualization of the ontology with the actors, directors and writers within the movies. Each node in the graph is a person, a link between two persons means they have worked together. The nodes are given a color based on their age-group we collected by querying to dbpedia.org.  The colors in the graph mean the following:
 ageGroup-1 = 0-24,    Color: Yellow
 ageGroup-2 = 25-40,   Color: Blue
